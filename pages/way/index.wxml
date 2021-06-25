@@ -1,0 +1,20 @@
+<!--pages/way/index.wxml-->
+<view class="wrapper">
+  <view class="m-theme" wx:for="{{list}}" wx:key="{{item.id}}">
+    <view class="theme">
+      {{item.theme}}
+    </view>
+    <view class="item" wx:for="{{item.main}}" wx:for-item="item1" wx:key="{{item1.id}}">
+      <view class="theme1">
+        {{item1.theme}}
+      </view>
+      <view class="content">
+        {{item1.content}}
+      </view>
+      <view class="content">
+        <image src="{{item1.img}}"></image>
+
+      </view>
+    </view>
+  </view>
+</view>

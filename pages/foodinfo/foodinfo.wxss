@@ -1,0 +1,36 @@
+Page{
+  min-width: 100vw;
+  min-height: 100vh;
+}
+.main{
+  position:absolute;
+  top: 0;
+  left: 0;
+}
+.body{
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title{
+  font-size: 20pt;
+  margin-top: 10vw;
+}
+.img{
+  width: 80vw;
+  margin-top: 10vw;
+}
+.info{
+  width: 90vw;
+  margin-top: 8vw;
+  font-size: 13pt;
+  margin-bottom: 10vh;
+}
+.content{
+  width: 100vw;
+  height: 50vh;
+  background-color: gray;
+  position:absolute;
+}

@@ -1,0 +1,97 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 700rpx;
+  height: 600rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100rpx;
+}
+
+.logo image {
+  width: 60vw;
+  height: 75%;
+  margin-left: 10vw;
+  border-radius: 270rpx;
+}
+
+.content1 {
+  height: 400rpx;
+}
+
+.content2 {
+  height: 400rpx;
+}
+
+.account {
+  margin: 0rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.password {
+  margin: 30rpx 0rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mini-img {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+  margin-top: 10rpx;
+}
+
+.info {
+  border-bottom: 1rpx black solid;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footertext {
+  display: block;
+  position: relative;
+  text-align: center;
+  font-size: 30rpx;
+  height: 30rpx;
+}
+
+.footertext::before {
+  content: "";
+  /*CSS伪类用法*/
+  position: absolute;
+  /*定位背景横线的位置*/
+  width: 110%;
+  /*宽和高做出来的背景横线*/
+  height: 2rpx;
+  left: -120%;
+  background: black;
+  top: 20rpx
+}
+
+.footertext::after {
+  content: "";
+  /*CSS伪类用法*/
+  position: absolute;
+  /*定位背景横线的位置*/
+  width: 110%;
+  /*宽和高做出来的背景横线*/
+  height: 2rpx;
+  right: -120%;
+  background: black;
+  top: 20rpx
+}

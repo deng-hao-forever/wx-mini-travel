@@ -1,0 +1,21 @@
+<!--pages/admin/index.wxml-->
+
+<view class="m-audit">
+  <view class="item" wx:for="{{list}}" wx:key="{{item.id}}">
+    <view class="avatar">
+      <image src="{{item.user.userInfo.userInfo.avatarUrl}}"></image>
+    </view>
+    <view class="content">
+      <view class="info">
+        <view class="name">{{item.user.userInfo.userInfo.nickName}}</view>
+        <view class="gender">{{item.user.userInfo.userInfo.gender?'男':'女'}}</view>
+      </view>
+      <view class="comments">
+      {{item.value}}
+      </view>
+    </view>
+    <view class="btn" bindtap="deleteComment" data-index="{{index}}" data-id="{{item.id}}">
+      删除
+    </view>
+  </view>
+</view>

@@ -1,0 +1,52 @@
+<!--components/comment/comment.wxml-->
+<view class="comment">
+  <scroll-view scroll-y="true" class="showcomment" wx:if="{{commentsIsshow}}">
+    <block wx:for="{{comments}}" wx:for-item="comment">
+      <view class="comment-item">
+        <view class="comment-item-title">
+          <image src="{{comment.userImage}}"></image>
+          <text class="nickname">{{comment.userNickName}}</text>
+          <text>{{comment.userCommentTime}}</text>
+        </view>
+        <view class="comment-item-content">
+          <text>{{comment.userCommentContext}}</text>
+        </view>
+        <!-- <view class="comment-item-footer">
+          
+        </view> -->
+      </view>
+    </block>
+  </scroll-view>
+  <view class="showBottom" wx:if="{{sendComment}}">
+    <view class="showText" bindtap="commentClick">
+      <view class="pen-div">
+        <image class="pen" mode="scaleToFill" src="../componentsimage/pen.png"></image>
+      </view>
+      <view class="pen-text">
+        <text class="pen-input">写评论...</text>
+      </view>
+    </view>
+    <view class="showButton">
+      <view class="comment-number">
+        <label class="cnNuberm">{{cnNuberm}}</label>
+        <image class="comment-number-ioc" catchtap="commentNuber" mode="scaleToFill" src="../componentsimage/message.png"></image>
+      </view>
+      <view class="collect">
+        <image class="collect-ioc" catchtap="collect" mode="scaleToFill" src="../componentsimage/show.png"></image>
+      </view>
+      <!-- <view class="share" wx:if="false">
+        <image class="share-ioc" catchtap="shareClick" mode="scaleToFill" src="../componentsimage/rediction.png"></image>
+      </view> -->
+    </view>
+  </view>
+  <view class="send-comment" wx:if="{{!sendComment}}">
+    <view class="send-view">
+      <textarea value="{{content}}" bindinput="bindinput" auto-focus="{{!sendComment}}" adjust-position="false" placeholder="{{placeholser}}" bindblur="bindTextAreaBlur" bindfocus="bindTextAreaFocus" contenteditable="true" maxlength="{{maxlength}}" auto-height="true" class="send-input">
+      </textarea>
+    </view>
+    <view class="send-buttom" wx:if="{{replay}}">
+      <text wx:if="{{!activity}}" class="send-text">发布</text>
+      <text wx:if="{{activity}}" class="send-text activity" catchtap="sendPull">发布</text>
+    </view>
+  </view>
+</view>

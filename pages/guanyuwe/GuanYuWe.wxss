@@ -1,0 +1,47 @@
+/* pages/guanyuwe/GuanYuWe.wxss */
+.main-content{
+  width: 84vw;
+  height: 93vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 1vhs;
+  padding:3vw;
+  line-height: 5vh;
+  font-size: 15pt;
+  border-radius: 45px;
+  border:3rpx dotted black;
+}
+.title{
+  width: 100vw;
+  min-height: 30vh;
+  margin-left: -5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo{
+  width: 25vw;
+  height: 25vw;
+  margin-top: 10vw;
+}
+.name{
+  height: 8vh;
+  line-height: 8vh;
+  margin-top: 2vh;
+  font-size: 15pt;
+}
+.version{
+  height: 5vh;
+  line-height: 5vh;
+  font-size: 10pt;
+}
+.body{
+  min-height: 50vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  padding:3vw;
+  line-height: 5vh;
+  font-size: 15pt;
+  
+}

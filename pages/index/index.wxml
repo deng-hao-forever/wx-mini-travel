@@ -1,0 +1,66 @@
+<view class="body">
+	<view class="banner">
+		<swiper class='bannerSwiper' previous-margin="54rpx" next-margin='54rpx' indicator-dots="true"
+			indicator-color='#B5B5B5' indicator-active-color='#fff' interval='2000' duration='1000'
+			bindchange='onChange' circular='true' autoplay="true">
+			<block wx:for="{{banners}}" wx:key="{{index}}">
+				<swiper-item>
+					<view class="img_box">
+						<image class="{{index==xindex?'imageBanner':'imageBanner_small'}}" mode="aspectFill"
+							src="{{item.cover_img}}" id='{{item.id}}' bindtap='imageClick'></image>
+					</view>
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+	<!-- <view class="main-content">
+		<view class="bg" bindtap="gotoyisaninfo">
+			<image class="bgimg" src="../Image/yminfo.png" />
+			<text style="color:#f4f4f4;margin-top:3rpx;">沂山简介</text>
+		</view>
+		<view class="bg" bindtap="gotomap">
+			<image class="bgimg" src="../Image/ployline.png" />
+			<text style="color:#f4f4f4;margin-top:3rpx;">旅游路线</text>
+		</view>
+		<view class="bg" bindtap="gotoyisfood">
+			<image class="bgimg" src="../Image/ymfood.png" />
+			<text style="color:#f4f4f4;margin-top:3rpx;">沂山美食</text>
+		</view>
+	</view> -->
+	<view class="footer">
+		<view class="">
+			<text class="footer-title" space="ensp">{{footer}}</text>
+		</view>
+		<view class="box">
+			<view wx:for="{{RepresentativeAttractions}}" wx:key="{{RepresentativeAttraction.id}}"
+				wx:for-item="RepresentativeAttraction">
+				<view class="item" bindtap="gotoattractioninfo" data-id="{{RepresentativeAttraction.id}}">
+					<view class="left-item">
+						<image src="{{RepresentativeAttraction.cover_img}}" mode="aspectFill"></image>
+					</view>
+					<view class="right-item">
+						<view class="right-item-title">
+							<text class="attraction-title">{{RepresentativeAttraction.attention_name}}</text>
+							<image src="../Image/fire.png" />
+							<view class="attraction-title1">{{RepresentativeAttraction.count}}</view>
+						</view>
+						<text class="attraction-info"></text>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="m-box {{!initShow?'m-box-show':''}}">
+	<view class="nav" wx:if="{{initShow}}">
+		<view class="intro" bindtap="goIntro">
+			简介
+		</view>
+		<view class="intro" bindtap="goWay">
+			路线
+		</view>
+	</view>
+		<view class="m-img_box" bindtap="tapAdd">
+			<image src="../../assets/img/1.png" mode="aspectFill"></image>
+		</view>
+	</view>
+</view>

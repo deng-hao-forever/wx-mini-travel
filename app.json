@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/yisaninfo/yisaninfo",
+    "pages/yisfood/yisfood",
+    "pages/foodinfo/foodinfo",
+    "pages/map/map",
+    "pages/SmartTour/SmartTour",
+    "pages/userLogin/userLogin",
+    "pages/personalSetting/personalSetting",
+    "pages/guanyuwe/GuanYuWe",
+    "pages/UserInfo/UserInfo",
+    "pages/attraction/Attractions",
+    "pages/intro/index",
+    "pages/way/index",
+    "pages/admin/index"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "entryPagePath": "pages/userLogin/userLogin",
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "孙中山故里",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#ff2400",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "pages/Image/mainpage1.png",
+        "iconPath": "pages/Image/mainpage.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "pages/Image/collection.png",
+        "iconPath": "pages/Image/collection1.png",
+        "pagePath": "pages/SmartTour/SmartTour",
+        "text": "智慧导游"
+      },
+      {
+        "selectedIconPath": "pages/Image/me.png",
+        "iconPath": "pages/Image/me1.png",
+        "pagePath": "pages/personalSetting/personalSetting",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": [
+    "location"
+  ],
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  }
+}

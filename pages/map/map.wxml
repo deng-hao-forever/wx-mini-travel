@@ -1,0 +1,8 @@
+<view class="title">
+      <text class="footer-title" space="ensp">路线一:入口—影壁—东镇湖—东镇碑林—东镇庙—百丈瀑布石刻—包体遗迹—海岳石刻—中字石刻—仙客亭—吕祖洞—百丈崖瀑布—古松群—日月石—试剑石—法云寺—天台亭—八戒石—天然石佛—救苦观音—长春亭—福佑店</text>
+</view>
+<map id="map" class="map" longitude="{{longitud}}" latitude="{{latitude}}" scale="14" markers="{{markers}}" polyline="{{polylines1}}"> </map>
+<view class="title">
+      <text class="footer-title" space="ensp">路线二:入口影壁—东镇湖—东镇碑林—东镇庙—牌坊—神龙大峡谷石刻—捉蟹潭—神龙潭—高山湿地—三清岩—龙涎泉—峡谷栈道—南天门—天阙—探海石—玉皇顶—仙话窟—天台亭—八戒石—天然石佛—救苦观音—长春亭—福佑店</text>
+</view>
+<map id="map" class="map" longitude="{{longitud}}" latitude="{{latitude}}" scale="14" polyline="{{polyline}}"> </map>

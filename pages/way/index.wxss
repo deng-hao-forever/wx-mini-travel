@@ -1,0 +1,26 @@
+/* pages/way/index.wxss */
+.m-theme{
+  padding: 0 32rpx;
+  box-sizing: border-box;
+}
+.theme{
+  margin-top: 64rpx;
+  font-size: 38rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.theme1{
+  margin-top: 32rpx;
+  margin-bottom: 16rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #333;
+}
+image{
+  margin-top: 12rpx;
+  width: 100%;
+}
+.wrapper{
+  padding: 0 0 64rpx;
+}

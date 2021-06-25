@@ -1,0 +1,12 @@
+<view class="main">
+  <view class="body">
+    <text class="title">{{title}}</text>
+    <image class="img" src="{{image}}" />
+    <text class="info" space="ensp">{{info}}</text>
+  </view>
+  <mp-toptips msg="{{error}}" type="error" show="{{error}}"></mp-toptips>
+  <comment class="commetn" id="commentInput" show="{{comments}}" newComment="{{comment}}" bind:sendPull="sendpull" cnNuberm="{{comments.length}}"
+    bind:commentNumber="commentNumber" bind:shareClick="shareClick" bind:collectClick="collectClick"
+    bind:resendPull="resendpull">
+  </comment>
+</view>

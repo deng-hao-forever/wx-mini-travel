@@ -1,0 +1,12 @@
+<view class="body">
+  <map id="map" class="map" longitude="{{longitud}}" latitude="{{latitude}}" scale="14" markers="{{markers}}"
+    show-location="true"></map>
+  <scroll-view scroll-y="true" wx:if="{{isshow}}" class="info">
+    <view class="s-info">
+      <text class="title">{{info.title}}</text>
+      <image src="{{info.imageUrl}}"></image>
+      <text decode="{{true}}" class="content">&nbsp;&nbsp;&nbsp;&nbsp;{{info.info}}</text>
+    </view>
+
+  </scroll-view>
+</view>

@@ -1,0 +1,13 @@
+<view>
+      <block wx:for="{{foods}}" wx:key="{{food.id}}" wx:for-item=food">
+        <view class="item" bindtap="gotofoodinfo" data-index="{{food.id}}">
+          <view class="left-item">
+            <image src="{{food.imageUrl}}" />
+          </view>
+          <view class="right-item">
+            <text class="attraction-title">{{food.title}}</text>
+            <text class="attraction-info">{{food.info}}</text>
+          </view>
+        </view>
+      </block>
+    </view>

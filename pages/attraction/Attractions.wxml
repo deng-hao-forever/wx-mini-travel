@@ -1,0 +1,47 @@
+<view class="main">
+	<view class="box">
+		<image wx:for="{{data.detail_img}}" src="{{item}}" wx:for-item="item" mode='widthFix'></image>
+	</view>
+	<view class="bottom">
+		<view class="m-ipt">
+			<input value="{{content}}" bindfocus="focus" bindblur="blur" bindinput="change" type="text" placeholder="评论~" />
+		</view>
+		<view class="like">
+			<view class="m-like">
+				<image class="comment" src="../components/componentsimage/message.png"></image>
+				<view>{{data.comment_count || '0'}}</view>
+			</view>
+
+			<view class="m-like">
+				<image bindtap="like" data-like="{{true}}" src="../Image/collection1.png" wx:if="{{!data.liked}}"></image>
+				<image bindtap="like" data-like="{{false}}"  src="../Image/collection.png" wx:if="{{data.liked}}"></image>
+				<view>{{data.count || '0'}}</view>
+			</view>
+
+			<view bindtap="postComment">评论</view>
+		</view>
+	</view>
+	<view class="promt">
+		<view class="black" wx:if="{{isShow}}"></view>
+		<view class="container {{isShow && 'active' || ''}}" catchtouchmove="catchtouchmove">
+			<view class="item" wx:for="{{data.comments}}">
+				<view class="avatar">
+					<image src="{{item.user.userInfo.userInfo.avatarUrl}}" mode="aspectFill"></image>
+				</view>
+				<view class="content" >
+					<view class="top">
+						<view class="name">
+							{{item.user.userInfo.userInfo.nickName}}
+						</view>
+						<view class="gender">
+							{{item.user.userInfo.userInfo.gender === 0?'男':'女' }}
+						</view>
+					</view>
+					<view class="m-bottom">
+						{{item.value}}
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

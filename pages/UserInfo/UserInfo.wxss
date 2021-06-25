@@ -1,0 +1,105 @@
+.image{
+  width: 100vw;
+  min-height: 80rpx;
+  border-bottom: 1rpx dashed black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.image text{
+  width: 50vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.nickname{
+  width: 100vw;
+  min-height: 80rpx;
+  border-bottom: 1rpx dashed black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nickname text{
+  width: 50vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.phone{
+  width: 100vw;
+  min-height: 80rpx;
+  border-bottom: 1rpx dashed black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.phone text{
+  width: 50vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.age{
+  width: 100vw;
+  min-height: 80rpx;
+  border-bottom: 1rpx dashed black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.age text{
+  width: 50vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.wegit{
+  width: 100vw;
+  min-height: 80rpx;
+  border-bottom: 1rpx dashed black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.wegit text{
+  width: 50vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.height{
+  width: 100vw;
+  min-height: 80rpx;
+  border-bottom: 1rpx dashed black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.height text{
+  width: 50vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.userInage{
+  width: 100rpx;
+  height: 100rpx;
+}
+.box{
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+}
+.input{
+  width: 50vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}

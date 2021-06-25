@@ -1,0 +1,22 @@
+<view class="mian">
+  <view class="logo">
+    <image class="logoImage" src="../Image/logo.jpg"></image>
+  </view>
+  <view class="content1" wx:if="{{content==1}}">
+    <button bindtap="login">使用微信一键登录</button>
+  </view>
+  <view class="content2" wx:if="{{content==2}}">
+    <view class="account">
+      <image class="mini-img" src="../Image/account1.png"></image>
+      <input type="text" class="info" placeholder="请输入账号" bindinput="userNameInput"></input>
+    </view>
+    <view class="password">
+      <image class="mini-img" src="../Image/password.png"></image>
+      <input password class="info" placeholder="请输入密码" bindinput="userPasswordInput"></input>
+    </view>
+    <button class="button1"     bindtap="loginBtnClick">登录</button>
+  </view>
+  <view class="footer">
+    <span class="footertext" bindtap="changeContent">切换登录方式</span>
+  </view>
+</view>

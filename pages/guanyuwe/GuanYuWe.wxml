@@ -1,0 +1,13 @@
+<view class="main-content">
+  <view class="title">
+    <image class="logo" src="../Image/logo.jpg"/>
+    <text class="name">汇智健康</text>
+    <text class="version">Version 0.0.1</text>
+  </view>
+  <view class="body">
+    <text class="info" space="ensp">
+      营业时间：8:00-17:00
+    </text>
+    <button bindtap="kefu">联系客服</button>
+  </view>
+</view>

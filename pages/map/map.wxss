@@ -1,0 +1,21 @@
+/* pages/map/map.wxss */
+.map{
+   width: 90vw;
+  margin-left: 5vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+.title {
+  width: 90vw;
+  margin-left: 5vw;
+  font-size: 26rpx;
+  line-height: 40rpx;
+}
+.footer-title{
+  width: 90vw;
+}
+/* .footer-title::before{
+  content: "|";
+  margin-right: 4.2vw;
+  font-weight: 800;
+} */

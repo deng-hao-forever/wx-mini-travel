@@ -1,0 +1,15 @@
+/* pages/intro/index.wxss */
+
+.img_box{
+  width: 750rpx;
+}
+.img_box image{
+  width: 100%;
+}
+
+.box{
+  padding: 24rpx 24rpx 64rpx;
+  font-size: 24rpx;
+  color: #333;
+  text-indent: 48rpx;
+}

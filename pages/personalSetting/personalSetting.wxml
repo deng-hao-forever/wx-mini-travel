@@ -1,0 +1,38 @@
+<!--pages/personalSetting/personalSetting.wxml-->
+<view class="body">
+  <view class="top" catchtap="toeditinfo">
+    <view>
+      <image class="userImage" src="{{user.avatarUrl}}"></image>
+    </view>
+    <view>
+      <view class="userName">{{user.nickName}}</view>
+      
+    </view>
+  </view>
+
+  <view class="setting">
+    <view class="setting-one">
+    <view class="setting-item" bindtap="gotoinfo">
+      <image class="left" src="../Image/logo.jpg"></image>
+      <text>个人信息</text>
+      <image class="right" src="../Image/right.png"></image>
+    </view>
+    <!-- <view class="setting-item" bindtap="updata">
+      <image class="left" src="../Image/logo.jpg"></image>
+      <text>上传数据</text>
+      <image class="right" src="../Image/right.png"></image>
+    </view> -->
+  </view>
+  <view class="setting-two">
+    <view class="setting-item" bindtap="gotowe">
+      <image class="left" src="../Image/logo.jpg"></image>
+      <text>联系客服</text>
+      <image class="right" src="../Image/right.png"></image>
+    </view>
+  </view>
+  </view>
+  <view class="Btn">
+    <view class="btn" style="width:100%;" bindtap="clearinfo">注销登录</view>
+  </view>
+   
+</view>

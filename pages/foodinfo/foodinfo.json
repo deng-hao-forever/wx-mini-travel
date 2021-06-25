@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "comment":"../components/comment/comment",
+    "mp-toptips": "weui-miniprogram/toptips/toptips"
+  }
+}

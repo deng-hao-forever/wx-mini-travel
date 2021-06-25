@@ -1,0 +1,46 @@
+.item{
+  width: 99vw;
+  height: 40vw;
+  display: flex;
+  flex-direction: row;
+  border: #F90 solid 0.5vw;
+}
+.item image{
+  width: 30vw;
+  height: 30vw;
+  margin-right: 3vw;
+  margin-left: 3vw;
+}
+.left-item{
+  width: 36vw;
+  height: 40vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.right-item{
+  width: 63vw;
+  height: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.attraction-title{
+  display: block;
+  height: 5vw;
+  line-height: 5vw;
+  margin-top: -1vw;
+}
+.attraction-info{
+  display: block;
+  width: 60vw;
+  height: 24vw;
+  margin-top: 1vw;
+  overflow: hidden;
+  font-size: 12pt;
+  display: -webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp: 4;
+  line-height: 6vw;
+  font-weight: 500;
+}
